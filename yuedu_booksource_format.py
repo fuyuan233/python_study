@@ -20,9 +20,9 @@ def process_and_sort_json(input_file, output_file=None) :
     """
     处理JSON文件中的bookSourceUrl字段并排序，自动处理重复项
 
-    参数:
-        input_file: 输入JSON文件路径
-        output_file: 输出JSON文件路径(可选，默认覆盖原文件)
+    :param input_file: 输入JSON文件路径
+    :param output_file: 输出JSON文件路径(可选，默认覆盖原文件)
+    :return: 处理成功返回True，否则返回False
     """
     # 如果没有指定输出文件，则覆盖原文件
     if output_file is None :
